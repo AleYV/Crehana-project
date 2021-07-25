@@ -6,7 +6,6 @@
 @blanco: #FFFFFF;
 @texto-oscuro: #303133;
 @texto-claro: #777;
-@dorago: #b4957a;
 @gris-claro: #eaeaea;
 
 @color-pastel-morado: #B9BCE1;
@@ -351,7 +350,7 @@ header{
 
     .miembros{
         background:@color-morado;
-        padding:5.675rem 0;
+        padding:5.475rem 0;
 
         .container{
             display: flex;
@@ -368,7 +367,7 @@ header{
                 }
 
                 .nombres{
-                    padding-left: 3.125rem;
+                    padding-left: 0.1rem;
                     padding-right:0;    
                     display: block;
 
@@ -844,15 +843,42 @@ footer{
     }
 }
 
+@media all and (max-width:718px){
+    header{
+        .menu-bar-movil{
+            width:100%;
+        }
+    }
+
+    .main .canciones .container .contenedor-canciones .encabezado{
+        display: block;
+
+        li{
+            margin-bottom: 0.125rem;
+            a{
+
+                text-align-last: center;
+                padding: 0.125rem;
+                margin: 0.5675rem;
+            }
+        }
+    }
+
+    .main .miembros .container .col{
+        width: 100%;
+    }
+}
+
 @media all and (max-width:580px){
     .main .miembros .container .col{
         width: 100%;
     }
 
-    .main .miembros.container .col .wrapper{
+    .main .miembros.container .col .wrap{
         padding-left: 0;
         padding-bottom: 0;
         text-align:center;
+
     }
 
     .wrapper{
@@ -865,17 +891,18 @@ footer{
         font-size: 1rem;
     }
 
-    .main .miembros .container .col .wrapper{
+    .main .miembros .container .col .wrap{
         font-size: 1rem;
     }
 
-    .main .canciones .container .contenedor-menu .contenido .item .col.izq{
+
+    .main .canciones .container .contenedor-canciones .contenido .item .col.izq{
         width: 100%;
         text-align: center;
         margin-bottom: 0.625rem;
     }
 
-    .main .canciones .container .contenedor-menu .contenido .item .col.der{
+    .main .canciones .container .contenedor-canciones .contenido .item .col.der{
         width: 100%;
     }
 
@@ -884,3 +911,17 @@ footer{
     }
 }
 
+@media all and (max-width: 369px){
+
+    .main .miembros .container .col .nombres{
+        padding-left: none;
+    }
+
+    .main .nosotros .container .col.izq{
+        border-right: none;
+    }
+
+    .main .miembros .container .col .nombres h2{
+        font-size: 3rem;
+    }
+}
