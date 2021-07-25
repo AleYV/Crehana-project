@@ -277,7 +277,7 @@ header .menu-bar-movil .slideMenu .menu-principal a {
 }
 .main .miembros {
   background: #444983;
-  padding: 5.675rem 0;
+  padding: 5.475rem 0;
 }
 .main .miembros .container {
   display: flex;
@@ -293,7 +293,7 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   overflow: hidden;
 }
 .main .miembros .container .col .nombres {
-  padding-left: 3.125rem;
+  padding-left: 0.1rem;
   padding-right: 0;
   display: block;
 }
@@ -675,11 +675,30 @@ footer .bottom-redes a:hover {
     text-align: justify;
   }
 }
+@media all and (max-width: 718px) {
+  header .menu-bar-movil {
+    width: 100%;
+  }
+  .main .canciones .container .contenedor-canciones .encabezado {
+    display: block;
+  }
+  .main .canciones .container .contenedor-canciones .encabezado li {
+    margin-bottom: 0.125rem;
+  }
+  .main .canciones .container .contenedor-canciones .encabezado li a {
+    text-align-last: center;
+    padding: 0.125rem;
+    margin: 0.5675rem;
+  }
+  .main .miembros .container .col {
+    width: 100%;
+  }
+}
 @media all and (max-width: 580px) {
   .main .miembros .container .col {
     width: 100%;
   }
-  .main .miembros.container .col .wrapper {
+  .main .miembros.container .col .wrap {
     padding-left: 0;
     padding-bottom: 0;
     text-align: center;
@@ -690,18 +709,29 @@ footer .bottom-redes a:hover {
   .main .nosotros .container .col.der .texto p {
     font-size: 1rem;
   }
-  .main .miembros .container .col .wrapper {
+  .main .miembros .container .col .wrap {
     font-size: 1rem;
   }
-  .main .canciones .container .contenedor-menu .contenido .item .col.izq {
+  .main .canciones .container .contenedor-canciones .contenido .item .col.izq {
     width: 100%;
     text-align: center;
     margin-bottom: 0.625rem;
   }
-  .main .canciones .container .contenedor-menu .contenido .item .col.der {
+  .main .canciones .container .contenedor-canciones .contenido .item .col.der {
     width: 100%;
   }
   .main .contacto .formulario .formulario-contacto input[type="submit"] {
     width: 100%;
+  }
+}
+@media all and (max-width: 369px) {
+  .main .miembros .container .col .nombres {
+    padding-left: none;
+  }
+  .main .nosotros .container .col.izq {
+    border-right: none;
+  }
+  .main .miembros .container .col .nombres h2 {
+    font-size: 3rem;
   }
 }
